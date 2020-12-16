@@ -1,0 +1,1432 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- main slider start -->
+<section class="bg-light position-relative">
+    <div class="main-slider dots-style theme1">
+        <div class="slider-item bg-img bg-img1">
+            <div class="container">
+                <div class="row align-items-center slider-height">
+                    <div class="col-12">
+                        <div class="slider-content">
+                            <p class="text text-dark text-uppercase animated mb-25" data-animation-in="fadeInDown">
+                                Wow skin Science</p>
+                            <h4 class="title text-dark animated text-capitalize mb-20" data-animation-in="fadeInLeft"
+                                data-delay-in="1">Charcoal & Keratin</h4>
+                            <h2 class="sub-title text-dark animated" data-animation-in="fadeInRight" data-delay-in="2">
+                                Shampoo 300ml</h2>
+                            <a href="shop-grid-4-column.html"
+                                class="btn theme--btn1 btn--lg text-uppercase  animated mt-45 mt-sm-25"
+                                data-animation-in="zoomIn" data-delay-in="3">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slider-item end -->
+        <div class="slider-item bg-img bg-img2">
+            <div class="container">
+                <div class="row align-items-center slider-height">
+                    <div class="col-12">
+                        <div class="slider-content">
+                            <p class="text text-dark text-uppercase animated mb-25" data-animation-in="fadeInLeft">
+                                cleanse and refresh</p>
+                            <h4 class="title text-dark animated text-capitalize mb-20" data-animation-in="fadeInRight"
+                                data-delay-in="1">Sisley Pre-Shampoo</h4>
+                            <h2 class="sub-title text-dark animated" data-animation-in="fadeInUp" data-delay-in="2">
+                                Up
+                                Purifying Mask</h2>
+                            <a href="shop-grid-4-column.html"
+                                class="btn theme--btn1 btn--lg text-uppercase animated mt-45 mt-sm-25"
+                                data-animation-in="zoomIn" data-delay-in="3">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slider-item end -->
+    </div>
+    <!-- slick-progress -->
+    <div class="slick-progress">
+        <span></span>
+    </div>
+    <!-- slick-progress end-->
+</section>
+<!-- main slider end -->
+
+<!-- common banner  start -->
+<div class="common-banner pt-70 bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-30">
+                <div class="position-relative zoom-in overflow-hidden">
+                    <div class="banner-thumb">
+                        <img src="{% static 'assets/img/banner/1.jpg' %}" alt="banner-thumb-naile">
+                    </div>
+                    <div class="banner-content">
+                        <p class="text text-capitalize text-dark mb-10">Cyber Monday</p>
+                        <h4 class="title text-capitalize text-dark">Big Sale 50% Off</h4>
+                        <a class="view-link text-capitalize mt-20" href="shop-grid-4-column.html">View
+                            collection
+                            <span class="ion-android-arrow-dropright-circle theme-color"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-30">
+                <div class="position-relative zoom-in overflow-hidden">
+                    <div class="banner-thumb">
+                        <img src="{% static 'assets/img/banner/2.jpg' %}" alt="banner-thumb-naile">
+                    </div>
+                    <div class="banner-content">
+                        <p class="text text-capitalize text-dark mb-10">Black Fridays</p>
+                        <h4 class="title text-capitalize text-dark">Sale Up To 70% Off
+                        </h4>
+                        <a class="view-link text-capitalize mt-20" href="shop-grid-4-column.html">View
+                            collection
+                            <span class="ion-android-arrow-dropright-circle theme-color"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- common banner  end -->
+
+<!-- product tab start -->
+<section class="product-tab bg-white pt-40 pb-70">
+    <div class="container">
+        <div class="product-tab-nav mb-30">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="section-title text-center mb-30">
+                        <h2 class="title text-dark text-capitalize mb-20">Best Sellers</h2>
+                        <p class="text">Browse the collection of our new products.</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <nav class="product-tab-menu theme1">
+                        <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                    role="tab" aria-controls="pills-home" aria-selected="true">Hot Categories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                    role="tab" aria-controls="pills-profile" aria-selected="false">Tops & Sets</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                                    role="tab" aria-controls="pills-contact" aria-selected="false">Accessories</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- product-tab-nav end -->
+        <div class="row">
+            <div class="col-12">
+                <div class="tab-content" id="pills-tabContent">
+                    <!-- first tab-pane -->
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <div class="product-slider-init theme1 slick-nav">
+                            <div class="slider-item">
+                                <div class="card product-card">
+                                    <div class="card-body p-0">
+                                        <div class="media flex-column">
+                                            <div class="product-thumbnail w-100 position-relative">
+                                                <span class="badge badge-success top-left">-20%</span>
+                                                <a class="d-block" href="single-product.html">
+                                                    <img class="first-img" src="{% static 'assets/img/product/1.jpg' %}"
+                                                        alt="thumbnail">
+                                                    <img class="second-img"
+                                                        src="{% static 'assets/img/product/1.1.jpg' %}" alt="thumbnail">
+                                                </a>
+                                                <!-- product links -->
+
+                                                <div class="product-links d-flex d-flex justify-content-between">
+                                                    <button class="pro-btn" data-toggle="modal"
+                                                        data-target="#add-to-cart">Add to cart</button>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Quick view"
+                                                                    class="ion-ios-search-strong"></span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#compare">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Add to compare"
+                                                                    class="ion-ios-shuffle-strong"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="wishlist.html">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="add to wishlist"
+                                                                    class="ion-android-favorite-outline"> </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- product links end-->
+                                                </div>
+
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="product-desc">
+                                                    <div class="star-rating">
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                    </div>
+                                                    <h3 class="title my-10"><a href="shop-grid-4-column.html">Juicy
+                                                            Couture
+                                                            Juicy Quilted Terry Track Jacket</a></h3>
+                                                    <h6 class="product-price"><del class="del">$23.90</del>
+                                                        <span class="onsale">$21.51</span></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slider-item end -->
+                            <div class="slider-item">
+                                <div class="card product-card">
+                                    <div class="card-body p-0">
+                                        <div class="media flex-column">
+                                            <div class="product-thumbnail w-100 position-relative">
+                                                <span class="badge badge-success top-left">-20%</span>
+                                                <a class="d-block" href="single-product.html">
+                                                    <img class="first-img" src="{% static 'assets/img/product/2.jpg' %}"
+                                                        alt="thumbnail">
+                                                    <img class="second-img"
+                                                        src="{% static 'assets/img/product/2.1.jpg' %}" alt="thumbnail">
+                                                </a>
+                                                <!-- product links -->
+
+                                                <div class="product-links d-flex d-flex justify-content-between">
+                                                    <button class="pro-btn" data-toggle="modal"
+                                                        data-target="#add-to-cart">Add to cart</button>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Quick view"
+                                                                    class="ion-ios-search-strong"></span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#compare">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Add to compare"
+                                                                    class="ion-ios-shuffle-strong"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="wishlist.html">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="add to wishlist"
+                                                                    class="ion-android-favorite-outline"> </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- product links end-->
+                                                </div>
+
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="product-desc">
+                                                    <div class="star-rating">
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                    </div>
+                                                    <h3 class="title my-10"><a href="shop-grid-4-column.html">Originals
+                                                            Kaval Windbreaker Winter Jacket</a></h3>
+                                                    <h6 class="product-price"><del class="del">$23.90</del>
+                                                        <span class="onsale">$21.51</span></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slider-item end -->
+                            <div class="slider-item">
+                                <div class="card product-card">
+                                    <div class="card-body p-0">
+                                        <div class="media flex-column">
+                                            <div class="product-thumbnail w-100 position-relative">
+                                                <span class="badge badge-danger top-left">new</span>
+                                                <a class="d-block" href="single-product.html">
+                                                    <img class="first-img" src="{% static 'assets/img/product/3.jpg' %}"
+                                                        alt="thumbnail">
+                                                </a>
+                                                <!-- product links -->
+
+                                                <div class="product-links d-flex d-flex justify-content-between">
+                                                    <button class="pro-btn" data-toggle="modal"
+                                                        data-target="#add-to-cart">Add to cart</button>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Quick view"
+                                                                    class="ion-ios-search-strong"></span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#compare">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Add to compare"
+                                                                    class="ion-ios-shuffle-strong"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="wishlist.html">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="add to wishlist"
+                                                                    class="ion-android-favorite-outline"> </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- product links end-->
+                                                </div>
+
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="product-desc">
+                                                    <div class="star-rating">
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-android-star-half de-selected"></span>
+                                                    </div>
+                                                    <h3 class="title my-10"><a
+                                                            href="shop-grid-4-column.html">Trans-Weight Hooded Wind
+                                                            and
+                                                            Water Resistant Shell</a></h3>
+                                                    <h6 class="product-price">
+                                                        <span class="onsale">$21.51</span></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slider-item end -->
+                            <div class="slider-item">
+                                <div class="card product-card">
+                                    <div class="card-body p-0">
+                                        <div class="media flex-column">
+                                            <div class="product-thumbnail w-100 position-relative">
+                                                <span class="badge badge-danger top-left">new</span>
+                                                <a class="d-block" href="single-product.html">
+                                                    <img class="first-img" src="{% static 'assets/img/product/3.jpg' %}"
+                                                        alt="thumbnail">
+                                                    <img class="second-img"
+                                                        src="{% static 'assets/img/product/4.1.jpg' %}" alt="thumbnail">
+                                                </a>
+                                                <!-- product links -->
+
+                                                <div class="product-links d-flex d-flex justify-content-between">
+                                                    <button class="pro-btn" data-toggle="modal"
+                                                        data-target="#add-to-cart">Add to cart</button>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Quick view"
+                                                                    class="ion-ios-search-strong"></span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#compare">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Add to compare"
+                                                                    class="ion-ios-shuffle-strong"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="wishlist.html">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="add to wishlist"
+                                                                    class="ion-android-favorite-outline"> </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- product links end-->
+                                                </div>
+
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="product-desc">
+                                                    <div class="star-rating">
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-android-star-half"></span>
+                                                    </div>
+                                                    <h3 class="title my-10"><a href="shop-grid-4-column.html">New
+                                                            Balance Fresh Foam Kaymin</a></h3>
+                                                    <h6 class="product-price">
+                                                        <span class="onsale">$21.51</span></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slider-item end -->
+                            <div class="slider-item">
+                                <div class="card product-card">
+                                    <div class="card-body p-0">
+                                        <div class="media flex-column">
+                                            <div class="product-thumbnail w-100 position-relative">
+                                                <span class="badge badge-danger top-left">new</span>
+                                                <a class="d-block" href="single-product.html">
+                                                    <img class="first-img" src="{% static 'assets/img/product/5.jpg' %}"
+                                                        alt="thumbnail">
+                                                </a>
+                                                <!-- product links -->
+
+                                                <div class="product-links d-flex d-flex justify-content-between">
+                                                    <button class="pro-btn" data-toggle="modal"
+                                                        data-target="#add-to-cart">Add to cart</button>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Quick view"
+                                                                    class="ion-ios-search-strong"></span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#compare">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Add to compare"
+                                                                    class="ion-ios-shuffle-strong"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="wishlist.html">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="add to wishlist"
+                                                                    class="ion-android-favorite-outline"> </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- product links end-->
+                                                </div>
+
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="product-desc">
+                                                    <div class="star-rating">
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-android-star-half"></span>
+                                                    </div>
+                                                    <h3 class="title my-10"><a href="shop-grid-4-column.html">New
+                                                            Balance Fresh Foam Kaymin</a></h3>
+                                                    <h6 class="product-price">
+                                                        <span class="onsale">$21.51</span></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slider-item end -->
+                        </div>
+                    </div>
+                    <!-- second tab-pane -->
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="product-slider-init theme1 slick-nav">
+                            <div class="slider-item">
+                                <div class="card product-card">
+                                    <div class="card-body p-0">
+                                        <div class="media flex-column">
+                                            <div class="product-thumbnail w-100 position-relative">
+                                                <span class="badge badge-success top-left">-20%</span>
+                                                <a class="d-block" href="single-product.html">
+                                                    <img class="first-img" src="{% static 'assets/img/product/1.jpg' %}"
+                                                        alt="thumbnail">
+                                                    <img class="second-img"
+                                                        src="{% static 'assets/img/product/1.1.jpg' %}" alt="thumbnail">
+                                                </a>
+                                                <!-- product links -->
+
+                                                <div class="product-links d-flex d-flex justify-content-between">
+                                                    <button class="pro-btn" data-toggle="modal"
+                                                        data-target="#add-to-cart">Add to cart</button>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Quick view"
+                                                                    class="ion-ios-search-strong"></span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#compare">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Add to compare"
+                                                                    class="ion-ios-shuffle-strong"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="wishlist.html">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="add to wishlist"
+                                                                    class="ion-android-favorite-outline"> </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- product links end-->
+                                                </div>
+
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="product-desc">
+                                                    <div class="star-rating">
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                    </div>
+                                                    <h3 class="title my-10"><a href="shop-grid-4-column.html">Juicy
+                                                            Couture
+                                                            Juicy Quilted Terry Track Jacket</a></h3>
+                                                    <h6 class="product-price"><del class="del">$23.90</del>
+                                                        <span class="onsale">$21.51</span></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slider-item end -->
+                            <div class="slider-item">
+                                <div class="card product-card">
+                                    <div class="card-body p-0">
+                                        <div class="media flex-column">
+                                            <div class="product-thumbnail w-100 position-relative">
+                                                <span class="badge badge-success top-left">-20%</span>
+                                                <a class="d-block" href="single-product.html">
+                                                    <img class="first-img" src="{% static 'assets/img/product/2.jpg' %}"
+                                                        alt="thumbnail">
+                                                    <img class="second-img"
+                                                        src="{% static 'assets/img/product/2.1.jpg' %}" alt="thumbnail">
+                                                </a>
+                                                <!-- product links -->
+
+                                                <div class="product-links d-flex d-flex justify-content-between">
+                                                    <button class="pro-btn" data-toggle="modal"
+                                                        data-target="#add-to-cart">Add to cart</button>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Quick view"
+                                                                    class="ion-ios-search-strong"></span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#compare">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Add to compare"
+                                                                    class="ion-ios-shuffle-strong"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="wishlist.html">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="add to wishlist"
+                                                                    class="ion-android-favorite-outline"> </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- product links end-->
+                                                </div>
+
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="product-desc">
+                                                    <div class="star-rating">
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                    </div>
+                                                    <h3 class="title my-10"><a href="shop-grid-4-column.html">Originals
+                                                            Kaval Windbreaker Winter Jacket</a></h3>
+                                                    <h6 class="product-price"><del class="del">$23.90</del>
+                                                        <span class="onsale">$21.51</span></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slider-item end -->
+                            <div class="slider-item">
+                                <div class="card product-card">
+                                    <div class="card-body p-0">
+                                        <div class="media flex-column">
+                                            <div class="product-thumbnail w-100 position-relative">
+                                                <span class="badge badge-danger top-left">new</span>
+                                                <a class="d-block" href="single-product.html">
+                                                    <img class="first-img" src="{% static 'assets/img/product/3.jpg' %}"
+                                                        alt="thumbnail">
+                                                </a>
+                                                <!-- product links -->
+
+                                                <div class="product-links d-flex d-flex justify-content-between">
+                                                    <button class="pro-btn" data-toggle="modal"
+                                                        data-target="#add-to-cart">Add to cart</button>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Quick view"
+                                                                    class="ion-ios-search-strong"></span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#compare">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Add to compare"
+                                                                    class="ion-ios-shuffle-strong"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="wishlist.html">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="add to wishlist"
+                                                                    class="ion-android-favorite-outline"> </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- product links end-->
+                                                </div>
+
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="product-desc">
+                                                    <div class="star-rating">
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-android-star-half de-selected"></span>
+                                                    </div>
+                                                    <h3 class="title my-10"><a
+                                                            href="shop-grid-4-column.html">Trans-Weight Hooded Wind
+                                                            and
+                                                            Water Resistant Shell</a></h3>
+                                                    <h6 class="product-price">
+                                                        <span class="onsale">$21.51</span></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slider-item end -->
+                            <div class="slider-item">
+                                <div class="card product-card">
+                                    <div class="card-body p-0">
+                                        <div class="media flex-column">
+                                            <div class="product-thumbnail w-100 position-relative">
+                                                <span class="badge badge-danger top-left">new</span>
+                                                <a class="d-block" href="single-product.html">
+                                                    <img class="first-img" src="{% static 'assets/img/product/4.jpg' %}"
+                                                        alt="thumbnail">
+                                                    <img class="second-img"
+                                                        src="{% static 'assets/img/product/4.1.jpg' %}" alt="thumbnail">
+                                                </a>
+                                                <!-- product links -->
+
+                                                <div class="product-links d-flex d-flex justify-content-between">
+                                                    <button class="pro-btn" data-toggle="modal"
+                                                        data-target="#add-to-cart">Add to cart</button>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Quick view"
+                                                                    class="ion-ios-search-strong"></span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#compare">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Add to compare"
+                                                                    class="ion-ios-shuffle-strong"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="wishlist.html">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="add to wishlist"
+                                                                    class="ion-android-favorite-outline"> </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- product links end-->
+                                                </div>
+
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="product-desc">
+                                                    <div class="star-rating">
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-android-star-half"></span>
+                                                    </div>
+                                                    <h3 class="title my-10"><a href="shop-grid-4-column.html">New
+                                                            Balance Fresh Foam Kaymin</a></h3>
+                                                    <h6 class="product-price">
+                                                        <span class="onsale">$21.51</span></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slider-item end -->
+                            <div class="slider-item">
+                                <div class="card product-card">
+                                    <div class="card-body p-0">
+                                        <div class="media flex-column">
+                                            <div class="product-thumbnail w-100 position-relative">
+                                                <span class="badge badge-danger top-left">new</span>
+                                                <a class="d-block" href="single-product.html">
+                                                    <img class="first-img" src="{% static 'assets/img/product/5.jpg' %}"
+                                                        alt="thumbnail">
+                                                </a>
+                                                <!-- product links -->
+
+                                                <div class="product-links d-flex d-flex justify-content-between">
+                                                    <button class="pro-btn" data-toggle="modal"
+                                                        data-target="#add-to-cart">Add to cart</button>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Quick view"
+                                                                    class="ion-ios-search-strong"></span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#compare">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Add to compare"
+                                                                    class="ion-ios-shuffle-strong"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="wishlist.html">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="add to wishlist"
+                                                                    class="ion-android-favorite-outline"> </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- product links end-->
+                                                </div>
+
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="product-desc">
+                                                    <div class="star-rating">
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-android-star-half"></span>
+                                                    </div>
+                                                    <h3 class="title my-10"><a href="shop-grid-4-column.html">New
+                                                            Balance Fresh Foam Kaymin</a></h3>
+                                                    <h6 class="product-price">
+                                                        <span class="onsale">$21.51</span></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slider-item end -->
+                        </div>
+                    </div>
+                    <!-- third tab-pane -->
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="product-slider-init theme1 slick-nav">
+                            <div class="slider-item">
+                                <div class="card product-card">
+                                    <div class="card-body p-0">
+                                        <div class="media flex-column">
+                                            <div class="product-thumbnail w-100 position-relative">
+                                                <span class="badge badge-success top-left">-20%</span>
+                                                <a class="d-block" href="single-product.html">
+                                                    <img class="first-img" src="{% static 'assets/img/product/1.jpg' %}"
+                                                        alt="thumbnail">
+                                                    <img class="second-img"
+                                                        src="{% static 'assets/img/product/1.1.jpg' %}" alt="thumbnail">
+                                                </a>
+                                                <!-- product links -->
+
+                                                <div class="product-links d-flex d-flex justify-content-between">
+                                                    <button class="pro-btn" data-toggle="modal"
+                                                        data-target="#add-to-cart">Add to cart</button>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Quick view"
+                                                                    class="ion-ios-search-strong"></span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#compare">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Add to compare"
+                                                                    class="ion-ios-shuffle-strong"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="wishlist.html">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="add to wishlist"
+                                                                    class="ion-android-favorite-outline"> </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- product links end-->
+                                                </div>
+
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="product-desc">
+                                                    <div class="star-rating">
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                    </div>
+                                                    <h3 class="title my-10"><a href="shop-grid-4-column.html">Juicy
+                                                            Couture
+                                                            Juicy Quilted Terry Track Jacket</a></h3>
+                                                    <h6 class="product-price"><del class="del">$23.90</del>
+                                                        <span class="onsale">$21.51</span></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slider-item end -->
+                            <div class="slider-item">
+                                <div class="card product-card">
+                                    <div class="card-body p-0">
+                                        <div class="media flex-column">
+                                            <div class="product-thumbnail w-100 position-relative">
+                                                <span class="badge badge-success top-left">-20%</span>
+                                                <a class="d-block" href="single-product.html">
+                                                    <img class="first-img" src="{% static 'assets/img/product/2.jpg' %}"
+                                                        alt="thumbnail">
+                                                    <img class="second-img"
+                                                        src="{% static 'assets/img/product/2.1.jpg' %}" alt="thumbnail">
+                                                </a>
+                                                <!-- product links -->
+
+                                                <div class="product-links d-flex d-flex justify-content-between">
+                                                    <button class="pro-btn" data-toggle="modal"
+                                                        data-target="#add-to-cart">Add to cart</button>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Quick view"
+                                                                    class="ion-ios-search-strong"></span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#compare">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Add to compare"
+                                                                    class="ion-ios-shuffle-strong"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="wishlist.html">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="add to wishlist"
+                                                                    class="ion-android-favorite-outline"> </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- product links end-->
+                                                </div>
+
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="product-desc">
+                                                    <div class="star-rating">
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                    </div>
+                                                    <h3 class="title my-10"><a href="shop-grid-4-column.html">Originals
+                                                            Kaval Windbreaker Winter Jacket</a></h3>
+                                                    <h6 class="product-price"><del class="del">$23.90</del>
+                                                        <span class="onsale">$21.51</span></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slider-item end -->
+                            <div class="slider-item">
+                                <div class="card product-card">
+                                    <div class="card-body p-0">
+                                        <div class="media flex-column">
+                                            <div class="product-thumbnail w-100 position-relative">
+                                                <span class="badge badge-danger top-left">new</span>
+                                                <a class="d-block" href="single-product.html">
+                                                    <img class="first-img" src="{% static 'assets/img/product/3.jpg' %}"
+                                                        alt="thumbnail">
+                                                </a>
+                                                <!-- product links -->
+
+                                                <div class="product-links d-flex d-flex justify-content-between">
+                                                    <button class="pro-btn" data-toggle="modal"
+                                                        data-target="#add-to-cart">Add to cart</button>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Quick view"
+                                                                    class="ion-ios-search-strong"></span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#compare">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Add to compare"
+                                                                    class="ion-ios-shuffle-strong"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="wishlist.html">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="add to wishlist"
+                                                                    class="ion-android-favorite-outline"> </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- product links end-->
+                                                </div>
+
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="product-desc">
+                                                    <div class="star-rating">
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-android-star-half de-selected"></span>
+                                                    </div>
+                                                    <h3 class="title my-10"><a
+                                                            href="shop-grid-4-column.html">Trans-Weight Hooded Wind
+                                                            and
+                                                            Water Resistant Shell</a></h3>
+                                                    <h6 class="product-price">
+                                                        <span class="onsale">$21.51</span></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slider-item end -->
+                            <div class="slider-item">
+                                <div class="card product-card">
+                                    <div class="card-body p-0">
+                                        <div class="media flex-column">
+                                            <div class="product-thumbnail w-100 position-relative">
+                                                <span class="badge badge-danger top-left">new</span>
+                                                <a class="d-block" href="single-product.html">
+                                                    <img class="first-img" src="{% static 'assets/img/product/4.jpg' %}"
+                                                        alt="thumbnail">
+                                                    <img class="second-img"
+                                                        src="{% static 'assets/img/product/4.1.jpg' %}" alt="thumbnail">
+                                                </a>
+                                                <!-- product links -->
+
+                                                <div class="product-links d-flex d-flex justify-content-between">
+                                                    <button class="pro-btn" data-toggle="modal"
+                                                        data-target="#add-to-cart">Add to cart</button>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Quick view"
+                                                                    class="ion-ios-search-strong"></span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#compare">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Add to compare"
+                                                                    class="ion-ios-shuffle-strong"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="wishlist.html">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="add to wishlist"
+                                                                    class="ion-android-favorite-outline"> </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- product links end-->
+                                                </div>
+
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="product-desc">
+                                                    <div class="star-rating">
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-android-star-half"></span>
+                                                    </div>
+                                                    <h3 class="title my-10"><a href="shop-grid-4-column.html">New
+                                                            Balance Fresh Foam Kaymin</a></h3>
+                                                    <h6 class="product-price">
+                                                        <span class="onsale">$21.51</span></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slider-item end -->
+                            <div class="slider-item">
+                                <div class="card product-card">
+                                    <div class="card-body p-0">
+                                        <div class="media flex-column">
+                                            <div class="product-thumbnail w-100 position-relative">
+                                                <span class="badge badge-danger top-left">new</span>
+                                                <a class="d-block" href="single-product.html">
+                                                    <img class="first-img" src="{% static 'assets/img/product/5.jpg' %}"
+                                                        alt="thumbnail">
+                                                </a>
+                                                <!-- product links -->
+
+                                                <div class="product-links d-flex d-flex justify-content-between">
+                                                    <button class="pro-btn" data-toggle="modal"
+                                                        data-target="#add-to-cart">Add to cart</button>
+                                                    <ul class="d-flex justify-content-center">
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Quick view"
+                                                                    class="ion-ios-search-strong"></span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#compare">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Add to compare"
+                                                                    class="ion-ios-shuffle-strong"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="wishlist.html">
+                                                                <span data-toggle="tooltip" data-placement="bottom"
+                                                                    title="add to wishlist"
+                                                                    class="ion-android-favorite-outline"> </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- product links end-->
+                                                </div>
+
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="product-desc">
+                                                    <div class="star-rating">
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-android-star-half"></span>
+                                                    </div>
+                                                    <h3 class="title my-10"><a href="shop-grid-4-column.html">New
+                                                            Balance Fresh Foam Kaymin</a></h3>
+                                                    <h6 class="product-price">
+                                                        <span class="onsale">$21.51</span></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slider-item end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- product tab end -->
+
+<!-- new arrival section start -->
+<section class="theme1 bg-white pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title text-center mb-30">
+                    <h2 class="title text-dark text-capitalize mb-20">Featured products </h2>
+                    <p class="text">Browse the collection of our featured products. </p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="product-slider-init slick-nav">
+
+                    {% for product in products %}
+                    <div class="slider-item">
+                        <div class="card product-card">
+                            <div class="card-body p-0">
+                                <div class="media flex-column">
+                                    <div class="product-thumbnail w-100 position-relative">
+                                        <span class="badge badge-danger top-left">new</span>
+                                        <a class="d-block" href="{{ product.get_absolute_url }}">
+                                            <img class="first-img" src="{{ product.image.url }}" alt="thumbnail">
+                                        </a>
+                                        <!-- product links -->
+
+                                        <div class="product-links d-flex d-flex justify-content-between">
+                                            <p>{{ product.name }}</p>
+                                            <ul class="d-flex justify-content-center">
+                                                <li>
+                                                    #{{ product.price }}
+                                                </li>
+
+                                                <li>
+                                                    <a href="{{ product.get_add_to_cart_url }}"><i
+                                                            class="fa fa-cart-plus"></i></a>
+                                                </li>
+                                            </ul>
+                                            <!-- product links end-->
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slider-item end -->
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- new arrival section end -->
+
+<!-- testimonial-section start -->
+<section class="testimonial-section pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="testimonial-init dots-style">
+                    <div class="slider-item">
+                        <div class="testimonial-content text-center">
+                            <img class="mb-30 mx-auto" src="{% static 'assets/img/profile/1.png' %}" alt="user">
+                            <p> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                                consequat,
+                                vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                                dignissim qui blandit praesent luptatum zzril </p>
+                            <span class="ion-quote mt-15 mb-30"></span>
+                            <h4 class="text-uppercase mb-15">John Doe</h4>
+                            <a class="text-capitalize" href="mailto:demo@hasthemes.com">demo@hasthemes.com</a>
+                        </div>
+                    </div>
+                    <!-- slider-item end -->
+                    <div class="slider-item">
+                        <div class="testimonial-content text-center">
+                            <img class="mb-30 mx-auto" src="{% static 'assets/img/profile/2.png' %}" alt="user">
+                            <p> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                                consequat,
+                                vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                                dignissim qui blandit praesent luptatum zzril </p>
+                            <span class="ion-quote mt-15 mb-30"></span>
+                            <h4 class="text-uppercase mb-15">John Doe</h4>
+                            <a class="text-capitalize" href="mailto:demo@hasthemes.com">demo@hasthemes.com</a>
+                        </div>
+                    </div>
+                    <!-- slider-item end -->
+                    <div class="slider-item">
+                        <div class="testimonial-content text-center">
+                            <img class="mb-30 mx-auto" src="{% static 'assets/img/profile/3.png' %}" alt="user">
+                            <p> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                                consequat,
+                                vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                                dignissim qui blandit praesent luptatum zzril </p>
+                            <span class="ion-quote mt-15 mb-30"></span>
+                            <h4 class="text-uppercase mb-15">John Doe</h4>
+                            <a class="text-capitalize" href="mailto:demo@hasthemes.com">demo@hasthemes.com</a>
+                        </div>
+                    </div>
+                    <!-- slider-item end -->
+                    <div class="slider-item">
+                        <div class="testimonial-content text-center">
+                            <img class="mb-30 mx-auto" src="{% static 'assets/img/profile/4.png' %}" alt="user">
+                            <p> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                                consequat,
+                                vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                                dignissim qui blandit praesent luptatum zzril </p>
+                            <span class="ion-quote mt-15 mb-30"></span>
+                            <h4 class="text-uppercase mb-15">John Doe</h4>
+                            <a class="text-capitalize" href="mailto:demo@hasthemes.com">demo@hasthemes.com</a>
+                        </div>
+                    </div>
+                    <!-- slider-item end -->
+                    <div class="slider-item">
+                        <div class="testimonial-content text-center">
+                            <img class="mb-30 mx-auto" src="{% static 'assets/img/profile/1.png' %}" alt="user">
+                            <p> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                                consequat,
+                                vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                                dignissim qui blandit praesent luptatum zzril </p>
+                            <span class="ion-quote mt-15 mb-30"></span>
+                            <h4 class="text-uppercase mb-15">John Doe</h4>
+                            <a class="text-capitalize" href="mailto:demo@hasthemes.com">demo@hasthemes.com</a>
+                        </div>
+                    </div>
+                    <!-- slider-item end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- testimonial-section end -->
+<!-- new arrival section start -->
+<section class="theme1 bg-white pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title text-center mb-30">
+                    <h2 class="title text-dark text-capitalize mb-20">New products </h2>
+                    <p class="text">Browse the collection of our new products.</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="popular-slider-init slick-nav">
+                    {% for product in products %}
+                    <div class="slider-item">
+                        <div class="card product-card">
+                            <div class="card-body p-0">
+                                <div class="media flex-column">
+                                    <div class="product-thumbnail w-100 position-relative">
+                                        <span class="badge badge-danger top-left">new</span>
+                                        <a class="d-block" href="single-product.html">
+                                            <img class="first-img" src="{{ product.image.url }}" alt="thumbnail">
+                                        </a>
+                                        <!-- product links -->
+
+                                        <div class="product-links d-flex d-flex justify-content-between">
+                                            <p>{{ product.name }}</p>
+                                            <ul class="d-flex justify-content-center">
+                                                <li>
+                                                    #{{ product.price }}
+                                                </li>
+
+                                                <li>
+                                                    <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                                </li>
+                                            </ul>
+                                            <!-- product links end-->
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slider-item end -->
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- new arrival section end -->
+
+<!-- common-banner start -->
+<div class="common-banner pb-70 bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="position-relative zoom-in overflow-hidden">
+                    <div class="banner-thumb banner-lagre">
+                        <img src="{% static 'assets/img/banner/3.jpg' %}" alt="banner-thumb-naile">
+                    </div>
+                    <div class="banner-content banner-content-large">
+                        <p class="text text-uppercase text-dark mb-10">Black Friday</p>
+                        <h4 class="title text-capitalize text-dark">Save Up To
+                            <span class="d-block d-inline-sm-block mt-10 mt-md-20">50% Off</span> </h4>
+                        <a class="view-link text-capitalize mt-25" href="shop-grid-4-column.html">View
+                            collection
+                            <span class="ion-android-arrow-dropright-circle theme-color"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- common-banner end -->
+
+<!-- blog-section start -->
+<section class="blog-section theme1 pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title text-center mb-30">
+                    <h2 class="title text-dark text-capitalize">Latest Blogs</h2>
+                    <p class="text mt-20">Present posts in a best way to highlight interesting moments of your blog.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="blog-init slick-nav">
+                    <div class="slider-item">
+                        <div class="single-blog">
+                            <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden"
+                                href="blog-grid-left-sidebar.html">
+                                <img src="{% static 'assets/img/blog-post/1.jpg' %}" alt="blog-thumb-naile">
+                            </a>
+                            <div class="blog-post-content">
+                                <h3 class="title text-capitalize mb-15"><a href="single-blog.html">This is first
+                                        Post For XipBlog</a></h3>
+                                <h5 class="sub-title mb-30 text-capitalize"> Posted by <a
+                                        class="blog-link theme-color d-inline-block mx-1"
+                                        href="https://themeforest.net/user/hastech">HasTech</a>Oct 4TH, 2020 <a
+                                        class="blog-link theme-color d-inline-block mx-1"
+                                        href="https://themeforest.net/user/hastech">Fashion</a></h5>
+                                <a class="btn read-more text-capitalize" href="single-blog.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slider-item end -->
+                    <div class="slider-item">
+                        <div class="single-blog">
+                            <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden"
+                                href="blog-grid-left-sidebar.html">
+                                <img src="{% static 'assets/img/blog-post/2.jpg' %}" alt="blog-thumb-naile">
+                            </a>
+                            <div class="blog-post-content">
+                                <h3 class="title text-capitalize mb-15"><a href="single-blog.html">This is first
+                                        Post For XipBlog</a></h3>
+                                <h5 class="sub-title mb-30 text-capitalize"> Posted by <a
+                                        class="blog-link theme-color d-inline-block mx-1"
+                                        href="https://themeforest.net/user/hastech">HasTech</a>Oct 4TH, 2020 <a
+                                        class="blog-link theme-color d-inline-block mx-1"
+                                        href="https://themeforest.net/user/hastech">Fashion</a></h5>
+                                <a class="btn read-more text-capitalize" href="single-blog.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slider-item end -->
+                    <div class="slider-item">
+                        <div class="single-blog">
+                            <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden"
+                                href="blog-grid-left-sidebar.html">
+                                <img src="{% static 'assets/img/blog-post/3.jpg' %}" alt="blog-thumb-naile">
+                            </a>
+                            <div class="blog-post-content">
+                                <h3 class="title text-capitalize mb-15"><a href="single-blog.html">This is first
+                                        Post For XipBlog</a></h3>
+                                <h5 class="sub-title mb-30 text-capitalize"> Posted by <a
+                                        class="blog-link theme-color d-inline-block mx-1"
+                                        href="https://themeforest.net/user/hastech">HasTech</a>Oct 4TH, 2020 <a
+                                        class="blog-link theme-color d-inline-block mx-1"
+                                        href="https://themeforest.net/user/hastech">Fashion</a></h5>
+                                <a class="btn read-more text-capitalize" href="single-blog.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slider-item end -->
+                    <div class="slider-item">
+                        <div class="single-blog">
+                            <a class="blog-thumb mb-20 zoom-in d-block overflow-hidden"
+                                href="blog-grid-left-sidebar.html">
+                                <img src="{% static 'assets/img/blog-post/4.jpg' %}" alt="blog-thumb-naile">
+                            </a>
+                            <div class="blog-post-content">
+                                <h3 class="title text-capitalize mb-15"><a href="single-blog.html">This is first
+                                        Post For XipBlog</a></h3>
+                                <h5 class="sub-title mb-30 text-capitalize"> Posted by <a
+                                        class="blog-link theme-color d-inline-block mx-1"
+                                        href="https://themeforest.net/user/hastech">HasTech</a>Oct 4TH, 2020 <a
+                                        class="blog-link theme-color d-inline-block mx-1"
+                                        href="https://themeforest.net/user/hastech">Fashion</a></h5>
+                                <a class="btn read-more text-capitalize" href="single-blog.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slider-item end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- blog-section end -->
+
+{% endblock content %}
